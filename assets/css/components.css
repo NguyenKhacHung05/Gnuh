@@ -1,0 +1,439 @@
+:root {
+  --primary-color: #3261d9;
+  --bg-color: #fff;
+  --bg-secondary: #edf4ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-color: #212529;
+  --light-color: #f7f9fa;
+  --heading-color: #000;
+  --text-color: #8f8d8d;
+  --link-color: #323232;
+  --danger-color: #ff5400;
+  --success-color: #1EB553;
+  --waring-color: #F4D03F;
+  --border-danger-color: #ffd1d6;
+  --border-success-color: #c1e3da;
+  --border-waring-color: #ffe0bd;
+  --hover-color: #3261d9;
+  --border-color: #ebebeb;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+body.light {
+  --primary-color: #3261d9;
+  --bg-color: #fff;
+  --bg-secondary: #edf4ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-color: #f7f9fa;
+  --light-color: #212529;
+  --heading-color: #000;
+  --text-color: #8f8d8d;
+  --link-color: #323232;
+  --danger-color: #ff5400;
+  --success-color: #1EB553;
+  --waring-color: #F4D03F;
+  --border-danger-color: #ffd1d6;
+  --border-success-color: #c1e3da;
+  --border-waring-color: #ffe0bd;
+  --hover-color: #3261d9;
+  --border-color: #ebebeb;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+.boxAlert{
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 999;
+}
+
+.boxAlert .alert{
+  border-radius: 0;
+  padding: 8px 30px 8px 12px;
+  font-size: 16px;
+}
+
+.boxAlert .alert .btn-close {
+  width: 0.75rem; /* Giảm chiều rộng */
+  height: 0.75rem; /* Giảm chiều cao */
+  font-size: 0.6rem; /* Giảm kích thước icon */
+  padding: 14px;
+  padding-left: 4px;
+}
+
+
+.blue {
+  background-color: #3261d9;
+  color: var(--white-color);
+  transition: .5s;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.blue:hover .btn3 {
+  color: var(--black-color);
+  background: var(--black-color);
+}
+
+.blue:hover .btn3:after {
+  content: "";
+  background: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.blue:hover .btn3:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.danger {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  transition: .5s;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+
+.danger:hover .btn3 {
+  color: var(--black-color);
+  background: var(--black-color);
+}
+
+.danger:hover .btn3:after {
+  content: "";
+  background: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.danger:hover .btn3:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.warning {
+  background-color: var(--waring-color);
+  color: var(--white-color);
+  transition: .5s;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+
+.warning:hover .btn3 {
+  color: var(--black-color);
+  background: var(--black-color);
+}
+
+.warning:hover .btn3:after {
+  content: "";
+  background: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.warning:hover .btn3:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.success {
+  background-color: var(--success-color);
+  color: var(--white-color);
+  transition: .5s;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+
+.success:hover .btn3 {
+  color: var(--black-color);
+  background: var(--black-color);
+}
+
+.success:hover .btn3:after {
+  content: "";
+  background: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.success:hover .btn3:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-danger {
+  color: var(--danger-color);
+}
+
+/* btn  */
+/* From Uiverse.io by CristianMontoya98 */
+.btn1 {
+  padding: .5em 2em;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.btn1:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.btn1:after {
+  content: "";
+  background: var(--black-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.error-text {
+  font-size: 10px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.btn1:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn2 {
+  padding: .5em 2em;
+  background: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.btn2:hover {
+  color: var(--white-color);
+  background: var(--black-color);
+}
+
+.btn2:after {
+  content: "";
+  background: var(--primary-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn2:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+.btn3 {
+  padding: .5em 2em;
+  background: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.btn3:hover {
+  color: var(--black-color);
+  background: var(--black-color);
+}
+
+.btn3:after {
+  content: "";
+  background: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn3:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.success-btn {
+  padding: .5em 2em;
+  background: var(--success-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: .5s;
+  &:hover{
+    background-color: #000;
+  }
+}
+
+.danger-btn {
+  padding: .5em 2em;
+  background: var(--danger-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: .5s;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.black-btn{
+  padding: .5em 2em;
+  background: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: .5s;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+
+.primary-btn {
+  padding: .5em 2em;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: .5s;
+  &:hover{
+    background-color: #000;
+  }
+}
+
+.primary-btn-sm {
+  padding: .5em 2em;
+  font-size: 15px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: .5s;
+
+  &:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+}
+
+/* btn  */

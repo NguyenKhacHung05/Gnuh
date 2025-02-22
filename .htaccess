@@ -1,0 +1,14 @@
+# Bảo vệ file .htaccess
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Bật chế độ Rewrite
+RewriteEngine On
+RewriteBase /gnuh/
+
+# Chuyển hướng tất cả yêu cầu không phải file hoặc thư mục tới index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
